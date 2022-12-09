@@ -2,7 +2,6 @@
     background:rgb(148, 228, 148)
 }
 footer{
-    color: aquamarine;
     font-size: 14px;
     display: flex;
     flex-direction: column;
