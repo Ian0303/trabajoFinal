@@ -10,18 +10,18 @@
             <form #f="ngForm" (ngSubmit)="onLogin()" novalidate >
 
               <div class="form-outline mb-4">
-                <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg" [(ngModel)]="nombreUsuario" required/>
+                <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg" [ngModelOptions]="{ standalone: true }" [(ngModel)]="nombreUsuario" required/>
                 <label class="form-label" for="nombreUsuario">Usuario</label>
               </div>
 
               <div class="form-outline mb-4">
-                <input type="password" id="password" class="form-control form-control-lg" [(ngModel)]="password" required/>
+                <input type="password" id="password" class="form-control form-control-lg" [ngModelOptions]="{ standalone: true }" [(ngModel)]="password" required/>
                 <label class="form-label" for="password">Contraseña</label>
               </div>
 
               <!-- Checkbox -->
               <div class="form-check d-flex justify-content-start mb-4">
-                <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                <input class="form-check-input" type="checkbox" value="" id="form1Example3" [ngModelOptions]="{ standalone: true }" />
                 <label class="form-check-label" for="form1Example3"> recordar mi contraseña </label>
               </div>
 
